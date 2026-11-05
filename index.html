@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEXT GEN — Model Management</title>
+<meta name="description" content="Next Gen is a boutique model agency. Apply to be scouted.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<nav><span class="logo">NEXT GEN</span><div><a href="#about">Agency</a><a href="#scouting">Scouting</a><a href="#apply">Apply</a></div></nav>
+<main>
+  <section class="hero">
+    <h1>NEXT<b>GEN</b></h1>
+    <div class="sub">Model Management · Scouting · Development</div>
+    <div><a class="btn" href="#apply">Apply to be scouted</a></div>
+  </section>
+
+  <section id="about" class="split">
+    <figure class="photo"><img src="images/runway.jpg" alt="Model walking an empty runway between rows of seated guests"></figure>
+    <div class="panel">
+      <h2>The next face is not found. It is chosen.</h2>
+      <p>Next Gen is a boutique agency built around a single idea: the industry’s most important faces haven’t walked yet.</p>
+      <p>Every application is reviewed personally by our founder. No fees, no middlemen.</p>
+      <div class="stats"><div><strong>01</strong>Personal review</div><div><strong>48h</strong>Response</div><div><strong>0</strong>Fees</div></div>
+    </div>
+  </section>
+
+  <section id="runway" class="split rev">
+    <figure class="photo"><img src="images/show.jpg" alt="Models walking a runway under rows of spotlights"></figure>
+    <div class="panel">
+      <h2>Runway ready</h2>
+      <p>From emerging designers to major fashion weeks, we place our talent where it is seen. Training, casting prep and show placement are part of every contract.</p>
+    </div>
+  </section>
+
+  <section id="scouting" class="split">
+    <figure class="photo"><img src="images/studio.jpg" alt="Behind the scenes at a studio shoot with softboxes and crew"></figure>
+    <div class="panel">
+      <h2>Scouted in the studio</h2>
+      <p>Test shoots, polaroids and portfolio building happen in our own studio. Our owner scouts every application personally, so send your best, unfiltered photos.</p>
+      <a class="btn" href="#apply">Start your application</a>
+    </div>
+  </section>
+
+  <section id="apply" class="right">
+    <div class="panel wide">
+      <h2>Apply</h2>
+      <form id="f" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div><label>Full name<input name="name" required></label></div>
+        <div><label>Email<input name="email" type="email" required></label></div>
+        <div><label>Age<input name="age" type="number" min="16" max="60" required></label></div>
+        <div><label>Height (cm)<input name="height" type="number" min="140" max="230" required></label></div>
+        <div><label>City<input name="city" required></label></div>
+        <div><label>Instagram<input name="instagram" placeholder="@handle"></label></div>
+        <div class="full"><label>Category
+          <select name="category"><option>Runway</option><option>Editorial</option><option>Commercial</option><option>Curve</option><option>Male</option></select></label></div>
+        <div class="full"><label>Photos link (Drive, Dropbox, portfolio)<input name="photos" type="url" placeholder="https://"></label></div>
+        <div class="full"><label>Why Next Gen?<textarea name="why" rows="3"></textarea></label></div>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="full"><button class="btn" type="submit">Submit application</button><div class="msg" id="msg"></div></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>© 2026 NEXT GEN MODEL MANAGEMENT</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
